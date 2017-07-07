@@ -1,38 +1,58 @@
 {
-  "name": "basic-electron-react-boilerplate",
-  "version": "0.5.0",
-  "description": "Minimal and modern react+electron+webpack boilerplate",
-  "author": "Phillip Barbiero",
-  "homepage": "https://github.com/pbarbiero/basic-electron-react-boilerplate",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/pbarbiero/basic-electron-react-boilerplate.git"
-  },
-  "license": "MIT",
-  "main": "main.js",
-  "scripts": {
-    "testDev": "electron .",
-    "testProd": "electron . --noDevServer",
-    "dev": "webpack-dev-server --hot --host 0.0.0.0 --config=./webpack.dev.config.js",
-    "build": "webpack --config webpack.build.config.js",
-    "package": "webpack --config webpack.build.config.js",
-    "postpackage": "electron-packager ./ --out=./builds"
-  },
-  "devDependencies": {
-    "babel-core": "^6.24.1",
-    "babel-loader": "^6.4.0",
-    "babel-preset-react": "^6.24.1",
-    "babili-webpack-plugin": "^0.0.11",
-    "css-loader": "^0.28.1",
-    "electron": "^1.6.7",
-    "electron-packager": "^8.7.0",
-    "extract-text-webpack-plugin": "^2.1.0",
-    "file-loader": "^0.11.1",
-    "html-webpack-plugin": "^2.28.0",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "style-loader": "^0.17.0",
-    "webpack": "^2.5.1",
-    "webpack-dev-server": "^2.4.5"
-  }
+    "name": "Glimpse",
+    "productName": "Glimpse",
+    "version": "0.0.1",
+    "description": "Personal Roadmapping",
+    "author": "Glimpse Labs, Inc.",
+    "homepage": "https://github.com/zackshapiro/glimpse-electron",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zackshapiro/glimpse-electron.git"
+    },
+    "license": "MIT",
+    "main": "main.js",
+    "scripts": {
+        "testDev": "electron .",
+        "testProd": "electron . --noDevServer",
+        "dev": "webpack-dev-server --hot --host 0.0.0.0 --config=./webpack.dev.config.js",
+        "build": "webpack --config webpack.build.config.js",
+        "package": "webpack --config webpack.build.config.js",
+        "postpackage": "electron-packager ./ --mac --icon='./assets/icons/mac/icon.icns' --out=./builds --overwrite"
+    },
+    "devDependencies": {
+        "babel-core": "^6.24.1",
+        "babel-loader": "^6.4.0",
+        "babel-preset-react": "^6.24.1",
+        "babili-webpack-plugin": "^0.0.11",
+        "css-loader": "^0.28.1",
+        "electron": "^1.6.7",
+        "electron-packager": "^8.7.0",
+        "extract-text-webpack-plugin": "^2.1.0",
+        "file-loader": "^0.11.1",
+        "html-webpack-plugin": "^2.28.0",
+        "react": "^15.4.2",
+        "react-dom": "^15.4.2",
+        "style-loader": "^0.17.0",
+        "webpack": "^2.5.1",
+        "webpack-dev-server": "^2.4.5"
+    },
+    "dependencies": {
+        "babel-polyfill": "^6.22.0",
+        "dotenv": "^4.0.0",
+        "gl-react": "^2.2.9",
+        "gl-react-hue-rotate": "^1.1.0",
+        "isomorphic-fetch": "^2.2.1",
+        "rc-slider": "^6.1.0",
+        "react": "15.4.2",
+        "react-dnd": "^2.2.4",
+        "react-dnd-html5-backend": "^2.2.4",
+        "react-dom": "15.4.2",
+        "react-redux": "^5.0.2",
+        "react-router": "^4.1.1",
+        "react-router-dom": "^4.1.1",
+        "react-router-redux": "^5.0.0-alpha.6",
+        "redux": "^3.6.0",
+        "redux-saga": "^0.14.3",
+        "tinycolor2": "^1.4.1"
+    }
 }

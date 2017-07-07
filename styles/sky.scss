@@ -1,0 +1,21 @@
+@import "mixins";
+@import "fonts";
+
+.sky {
+    width: 100%;
+    background: linear-gradient(180deg, #000000 0%, #331C4A 34.44%, #205F8A 68.89%, #2FCEAE 96.67%), linear-gradient(0deg, #C4C4C4, #C4C4C4);
+    opacity: 1.00;
+    position: absolute;
+    top: 51px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.add-new-element-button {
+    float: left;
+    margin-top: 12px;
+    position: relative;
+    z-index: 500;
+}

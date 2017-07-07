@@ -1,0 +1,18 @@
+<svg width="53" height="54" viewBox="0 0 53 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>&#224;&#213;&#172;</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-6960 -4611)">
+<g id="Ellipse 2">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="translate(6960 4611)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="translate(6960 4611)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 53 27C 53 41.9117 41.1355 54 26.5 54C 11.8645 54 0 41.9117 0 27C 0 12.0883 11.8645 0 26.5 0C 41.1355 0 53 12.0883 53 27Z"/>
+<path id="path1_stroke_2x" d="M 50 27C 50 40.3079 39.4261 51 26.5 51L 26.5 57C 42.845 57 56 43.5154 56 27L 50 27ZM 26.5 51C 13.5739 51 3 40.3079 3 27L -3 27C -3 43.5154 10.155 57 26.5 57L 26.5 51ZM 3 27C 3 13.6921 13.5739 3 26.5 3L 26.5 -3C 10.155 -3 -3 10.4846 -3 27L 3 27ZM 26.5 3C 39.4261 3 50 13.6921 50 27L 56 27C 56 10.4846 42.845 -3 26.5 -3L 26.5 3Z"/>
+</defs>
+</svg>
