@@ -25,7 +25,7 @@ import { userIsSignedIn } from '../cookie_monster.js';
 import SignIn from '../containers/signin';
 import Home from '../containers/home';
 
-class Application extends Component {
+class App extends Component {
     constructor(props) {
         super(props);
 
@@ -50,4 +50,4 @@ class Application extends Component {
     }
 }
 
-export default Application;
+export default App;
