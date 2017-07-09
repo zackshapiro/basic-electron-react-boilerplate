@@ -36,11 +36,6 @@ module.exports = {
                     presets: ['react', 'es2015', 'stage-3'],
                 },
             },
-            {
-                test: /\.(jpe?g|png|gif|svg)$/,
-                use: [{ loader: 'file-loader?name=img/[name]__[hash:base64:5].[ext]' }],
-                include: defaultInclude,
-            },
             { 
                 test: /\.(ttf|eot|otf|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
                 loader: 'file-loader',

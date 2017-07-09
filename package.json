@@ -17,7 +17,7 @@
 
         "testProd": "electron . --noDevServer",
         "build": "NODE_ENV=production webpack --config webpack.build.config.js",
-        "package": "webpack --config webpack.build.config.js",
+        "package": "NODE_ENV=production webpack --config webpack.build.config.js",
         "postpackage": "electron-packager ./ --mac --icon='./assets/icons/mac/icon.icns' --out=./builds --overwrite"
     },
     "devDependencies": {
