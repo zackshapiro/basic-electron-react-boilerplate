@@ -5,21 +5,24 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 // Config directories
 const SRC_DIR = path.resolve(__dirname, 'src');
+const ASSETS_DIR = path.resolve(__dirname, 'assets');
 const OUTPUT_DIR = path.resolve(__dirname, 'dist');
 
 // Any directories you will be adding code/files into, need to be added to this array so webpack will pick them up
-const defaultInclude = [SRC_DIR];
+const defaultInclude = [SRC_DIR, ASSETS_DIR];
 
 module.exports = {
     entry: SRC_DIR + '/index.js',
+    
     output: {
         path: OUTPUT_DIR,
         publicPath: './',
         filename: 'bundle.js',
     },
+    
     module: {
         rules: [
-                        { 
+            { 
                 test: /\.css$/, 
                 loader: 'style-loader!css-loader',
             },
@@ -45,7 +48,7 @@ module.exports = {
     plugins: [
         new ExtractTextPlugin('bundle.css'),
         new webpack.DefinePlugin({
-            'process.env.NODE_ENV': JSON.stringify('production'),
+            'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production'),
         }),
         new BabiliPlugin(),
     ],

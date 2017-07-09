@@ -35,6 +35,8 @@ function createWindow() {
       slashes: true
     });
   } else {
+    console.log('we here');
+    console.log(path.join(__dirname, 'dist', 'index.html'));
     indexPath = url.format({
       protocol: 'file:',
       pathname: path.join(__dirname, 'dist', 'index.html'),
