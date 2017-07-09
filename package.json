@@ -12,10 +12,11 @@
     "license": "MIT",
     "main": "main.js",
     "scripts": {
+        "dev": "NODE_ENV=development webpack-dev-server --hot --host 0.0.0.0 --config=./webpack.dev.config.js",
         "testDev": "electron .",
+
         "testProd": "electron . --noDevServer",
-        "dev": "webpack-dev-server --hot --host 0.0.0.0 --config=./webpack.dev.config.js",
-        "build": "webpack --config webpack.build.config.js",
+        "build": "NODE_ENV=production webpack --config webpack.build.config.js",
         "package": "webpack --config webpack.build.config.js",
         "postpackage": "electron-packager ./ --mac --icon='./assets/icons/mac/icon.icns' --out=./builds --overwrite"
     },

@@ -4,7 +4,7 @@ class MenuBar extends Component {
     render() {
         return (
             <div className="menu-bar">
-                <img src="../images/glimpse-menu-bar.svg" />
+                <img src="../../images/glimpse-menu-bar.svg" />
 
                 <div className="nav">
                     <a className="selected" href="#">Sky</a>
