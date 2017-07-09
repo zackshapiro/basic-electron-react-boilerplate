@@ -4,10 +4,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // Config directories
 const SRC_DIR = path.resolve(__dirname, 'src');
+const ASSETS_DIR = path.resolve(__dirname, 'assets');
 const OUTPUT_DIR = path.resolve(__dirname, 'dist');
 
 // Any directories you will be adding code/files into, need to be added to this array so webpack will pick them up
-const defaultInclude = [SRC_DIR];
+const defaultInclude = [SRC_DIR, ASSETS_DIR];
 
 module.exports = {
     entry: ['babel-polyfill', SRC_DIR + '/index.js'],
