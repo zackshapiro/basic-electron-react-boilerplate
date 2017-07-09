@@ -1,0 +1,29 @@
+@import "mixins";
+
+.slot {
+    width: 150px;
+    height: 150px;
+    margin-top: 32px;
+    display: inline-block;
+    margin-left: 8%;
+    cursor: pointer;
+    position: relative;
+    border-radius: 50%;
+
+    &:hover {
+        border: 3px dashed rgba(255, 255, 255, 0.5);
+    }
+
+    &.highlighted {
+        background: rgba(255, 255, 255, 0.2);
+    }
+}
+
+.slot.element {
+    @include absolute-center;
+    transform-origin: 0 0;
+}
+
+.slot.showOutline {
+    border: 3px dashed rgba(255, 255, 255, 0.5);
+}
